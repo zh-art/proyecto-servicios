@@ -1,6 +1,6 @@
 # Proyecto Servicios
 
-Una implementación de un nodo de protocolo distribuido de cadena de bloques P2P. Este proyecto mantiene un archivo de mensajes distribuido, con "transacciones" (adiciones de mensajes) que se validan mediante hashes MD5, los cuales deben ser minados para cada mensaje. Es similar a un mini-bitcoin, pero destinado a la comunicación (En este caso simular un chat para mantener la comunicación de entes gubernamentales en caso de desastres naturales, que tengan la capacidad de comunicación por medio de un chat)en lugar de la transferencia de moneda ficticia. Utiliza exclusivamente IPv4 debido a la complejidad añadida de IPv6. 
+Una implementación de un nodo de protocolo distribuido de cadena de bloques P2P. Este proyecto mantiene un archivo de mensajes distribuido, con "transacciones" (adiciones de mensajes) que se validan mediante hashes MD5, los cuales deben ser minados para cada mensaje. En este caso intentamos simular un chat para mantener la comunicación en caso de desastres naturales (más o menos el caso que se plantea en la rúbrica). Utiliza exclusivamente IPv4 debido a la complejidad añadida de IPv6.
 
 Se ha incluido un nivel detallado de comentarios debido a que es un proyecto, lo cual facilita su comprensión y revisión.
 
@@ -28,7 +28,7 @@ Para compilar el proyecto, simplemente ejecuta `make`. Las reglas de destino del
 
 Para ejecutar el programa desde la línea de comandos, utiliza la siguiente sintaxis:
 
-./blockchain <IP del par inicial> <IP local>
+./blockchain IP del par inicial IP local
 
 Donde la IP del par inicial es la dirección IPv4 de un par al que deseas conectarte activamente al inicio de la ejecución. Ingresa una IP inválida para no conectarte a ningún par y simplemente escuchar conexiones de manera pasiva.
 
